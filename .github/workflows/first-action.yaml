@@ -1,0 +1,3 @@
+name: "First Action"
+on: ["push"]
+
