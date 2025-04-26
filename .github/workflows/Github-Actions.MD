@@ -49,3 +49,31 @@
     repository: github repo
     ref: master
     path: /github-name
+
+# Environement Variables
+- we can have default env variables = ALL should be in Capital Letters
+- we can have env varibale at workflow level,job level,step level
+- workflows: all jobs, steps are included
+- jobs: all jobs and steps are included
+- steps: all steps are included
+
+# How to read Environment variables
+- we can read two ways 
+  - using shell based
+    - using linux/MacOS
+      - $ENVIRONMENT_NAME
+    - Using Windows
+      - $Env=ENVIRONMENT_NAME
+  - using yaml syntax based
+    - ${{ env.VARIABLE_NAME }}
+
+# Accesing Secrets
+- Secrets like api keys/tokens/passwords can be stored as environment variables in setting once saved we cant see them again
+- we can uses them like below
+  - {{ secrets.VARIABLE_NAME }}
+  
+# Artifacts Upload and Download
+- Upload artifacts has: action/upload-artifact
+- Download Artifacts has: actions/download-artifacts
+
+
