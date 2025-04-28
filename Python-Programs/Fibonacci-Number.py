@@ -16,3 +16,12 @@ for i in range(2,20):
     n2 = sum
 print()
 print(fib_list)
+
+
+first = 0
+second = 1
+for i in range(10):
+    print(first,end=" ")
+    temp = first  
+    first = second
+    second = temp + second

@@ -12,7 +12,7 @@ if n > 1:
             count = count + 1
             factors_list.append(i)
     if count == 2:
-        print(f"The given number  {n} is a Prime Number ..")
+        print(f"The given number {n} is a Prime Number ..")
     else:
         print(f"The Given number {n} is not a Prime Number...")
 print(factors_list)
