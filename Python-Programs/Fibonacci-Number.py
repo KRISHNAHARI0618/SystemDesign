@@ -25,3 +25,12 @@ for i in range(10):
     temp = first  
     first = second
     second = temp + second
+print()
+recFib = []
+def fibona(n):
+    if n in [0,1]:
+        return n
+    else:
+        return fibona(n-1)+fibona(n-2)
+print("Fibonacci..")
+print(fibona(10))
